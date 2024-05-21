@@ -61,7 +61,7 @@ const HomePage = () => {
               className="w-full md:w-1/3 p-4 border rounded shadow-md bg-gray-100 h-96 overflow-y-auto"
             >
               <h2 className="text-xl font-bold mb-4">
-                {group === 'Exited' ? 'Cleanings Required' : group === 'Pending' ? 'Cleanings Pending' : 'Cleanings Done'}
+                {group === 'Exited' ? 'Cleanings Required' : group === 'Full Property List' ? 'Cleanings Done' : 'Pending cleanings'}
               </h2>
               {filterProperties(group).map((property, index) => (
                 <Draggable key={property._id} draggableId={property._id} index={index}>
