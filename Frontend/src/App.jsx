@@ -6,11 +6,10 @@ import Navbar from './components/Navbar.jsx'
 
 
 function App() {
-
   return (
-    <div className='flex'>
+    <div>
       <Navbar />
-      <div className='max-w-5xl my-5 text-white mx-auto transition-all duration-300 flex-1'>
+      <div className='max-w-3xl my-3 text-black mx-auto transition-all duration-300 flex-1 '>
       <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path="/add-property" element={<AddPropertyForm />} /> 
