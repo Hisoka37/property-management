@@ -48,6 +48,26 @@ app.post('/api/properties', (req, res) => {
     });
 })
 
+app.patch('/api/properties/:id/group', (req, res) => {
+    const { id } = req.params;
+    const { group } = req.body;
+  
+    const propertyIndex = data.properties.findIndex(prop => prop._id === id);
+    if (propertyIndex !== -1) {
+      data.properties[propertyIndex].group = group;
+      fs.writeFile('properties.json', JSON.stringify(data, null, 2), (err) => {
+        if (err) {
+          console.error('Error writing properties.json:', err);
+          res.status(500).send('Error updating property group');
+        } else {
+          res.status(200).send('Property group updated successfully');
+        }
+      });
+    } else {
+      res.status(404).send('Property not found');
+    }
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
