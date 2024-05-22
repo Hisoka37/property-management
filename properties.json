@@ -5269,27 +5269,9 @@
       "directCost": {
         "April:2024": "1976.000"
       },
-      "group": "Exited",
+      "group": "Full Property List",
       "city": "London",
       "fixedCost": 50,
-      "__v": 0
-    },
-    {
-      "_id": "66232864ef5cda786692dfdf",
-      "address": "Flat 3, 28 Mead Place, London, E9 6BG",
-      "rentalCost": {
-        "April:2024": "2000"
-      },
-      "propertyName": "1B E9 A - 28 Mead Place",
-      "tag": "1B E9 A",
-      "contractStartDate": "2024-05-23",
-      "contractEndDate": "2024-06-26",
-      "directCost": {
-        "April:2024": "1200"
-      },
-      "group": "Cleaning Done",
-      "city": "London",
-      "fixedCost": 25,
       "__v": 0
     }
   ]
